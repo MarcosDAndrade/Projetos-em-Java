@@ -1,5 +1,3 @@
-package ArrayListContatos;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -10,6 +8,7 @@ public class ListadeContatos {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		boolean rodando = true;
+		boolean contato = false;
 		ArrayList <Contatos> c = new ArrayList<>();	
 		System.out.println("--------------------");
 		System.out.println(" AGENDA DE CONTATOS");
@@ -42,9 +41,15 @@ public class ListadeContatos {
 				
 				c.add(c1);
 				System.out.println("ADICIONADO COM SUCESSO!");
+				contato = true;
 				break;
 			}
 			case "2": {
+
+				if (!contato){
+					System.out.println("Não há contatos");
+					break;
+				} 
 				for(int i=0;i<c.size();i++) {
 					Contatos utemp = c.get(i);
 					System.out.println("Contato: " + (i+1));
@@ -129,9 +134,8 @@ public class ListadeContatos {
 				rodando = false;
 				System.out.println("Fim do Programa");
 			}
-			}
+		}
 		}while(rodando == true);
 
 	}
-
 }

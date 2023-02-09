@@ -1,5 +1,3 @@
-package ArrayListContatos;
-
 public class Contatos {
 	private String nome;
 	private String tel;

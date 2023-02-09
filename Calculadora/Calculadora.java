@@ -7,5 +7,4 @@ public class Calculadora {
 		c.calcular();
 
 	}
-
 }
