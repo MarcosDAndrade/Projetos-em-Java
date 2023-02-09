@@ -18,12 +18,14 @@ public class ListadeContatos {
 		
 		
 		do {
+			System.out.println("======================");
 			System.out.println("1- Adicionar Contato");
 			System.out.println("2- Mostrar Contatos");
 			System.out.println("3- Buscar Contato");
 			System.out.println("4- Editar Contato");
 			System.out.println("5- Excluir Contato");
 			System.out.println("6- Sair");
+			System.out.println("======================");
 			
 			String opc = sc.nextLine();
 			
@@ -39,6 +41,7 @@ public class ListadeContatos {
 				c1.setTel(tel);
 				
 				c.add(c1);
+				System.out.println("ADICIONADO COM SUCESSO!");
 				break;
 			}
 			case "2": {
@@ -124,6 +127,7 @@ public class ListadeContatos {
 				}
 			case "6": {
 				rodando = false;
+				System.out.println("Fim do Programa");
 			}
 			}
 		}while(rodando == true);
