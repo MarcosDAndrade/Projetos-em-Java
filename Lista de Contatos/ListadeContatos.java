@@ -21,8 +21,8 @@ public class ListadeContatos {
 			System.out.println("1- Adicionar Contato");
 			System.out.println("2- Mostrar Contatos");
 			System.out.println("3- Buscar Contato");
-			System.out.println("4- Excluir Contato");
-			System.out.println("5- Editar Contato");
+			System.out.println("4- Editar Contato");
+			System.out.println("5- Excluir Contato");
 			System.out.println("6- Sair");
 			
 			String opc = sc.nextLine();
